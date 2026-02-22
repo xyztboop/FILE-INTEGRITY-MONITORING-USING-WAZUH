@@ -60,7 +60,8 @@ sudo nano /var/ossec/etc/ossec.conf
 <syscheck>
   <frequency>600</frequency>
   <directories check_all="yes" report_changes="yes" realtime="yes">/home/username</directories>
-</syscheck>
+</syscheck> 
+
 <img width="602" height="184" alt="image" src="https://github.com/user-attachments/assets/7459fbdc-9a10-405f-a602-b970e2b9341c" />
 
 This monitors changes in the Public Documents folder.
@@ -79,21 +80,25 @@ To verify FIM is working:
 Create a test file:
 
 sudo touch var/www/testfile.txt
+
 <img width="431" height="57" alt="image" src="https://github.com/user-attachments/assets/5ef7febb-ff07-4e6c-8285-6e5a267daac0" />
 
 Add some content:
 
  sudo nano /var/www/testfile.txt
+ 
  <img width="449" height="54" alt="image" src="https://github.com/user-attachments/assets/437b7de5-af03-487a-b9a6-127e90a21f70" />
 
 
 Delete the file:
 
 sudo rm /var/www/testfile.txt
+
 <img width="362" height="56" alt="image" src="https://github.com/user-attachments/assets/632e2f5a-2b6c-458c-93a4-9712130ff677" />
 
 If FIM is configured correctly, events will appear under Security Events → FIM in the Wazuh Dashboard.
 Dashboard Output & Alert Analysis
+
 <img width="602" height="294" alt="image" src="https://github.com/user-attachments/assets/bbb568ee-8ec5-471e-816c-774ec81db611" />
 
 Agent Status:
@@ -129,7 +134,8 @@ Each event generated a rule-based alert inside the dashboard
 <img width="1893" height="902" alt="image" src="https://github.com/user-attachments/assets/9ed6f94e-d6fa-4a91-b12f-ad0c99587f3b" />
 
 <img width="1859" height="663" alt="Screenshot 2026-02-22 151740" src="https://github.com/user-attachments/assets/c782566d-0edf-4565-841a-383d7f4d09a5" />
-
+Conclusion:
+This project helped me implement file integrity monitoring using Wazuh to detect and analyze unauthorized file changes.It demonstrates real world skills used in IT technologies and SOC centers and Incident response.
 
 
 
