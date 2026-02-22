@@ -61,7 +61,6 @@ sudo nano /var/ossec/etc/ossec.conf
   <frequency>600</frequency>
   <directories check_all="yes" report_changes="yes" realtime="yes">/home/username</directories>
 </syscheck> 
-
 <img width="602" height="184" alt="image" src="https://github.com/user-attachments/assets/7459fbdc-9a10-405f-a602-b970e2b9341c" />
 
 This monitors changes in the Public Documents folder.
