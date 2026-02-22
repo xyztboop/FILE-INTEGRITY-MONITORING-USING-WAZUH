@@ -63,11 +63,15 @@ sudo nano /var/ossec/etc/ossec.conf
 </syscheck> 
 <img width="602" height="184" alt="image" src="https://github.com/user-attachments/assets/7459fbdc-9a10-405f-a602-b970e2b9341c" />
 
+
 This monitors changes in the Public Documents folder.
+
 
 <img width="602" height="358" alt="image" src="https://github.com/user-attachments/assets/d00d2fc1-ad20-45c6-a385-267ca1257013" />
 
-Restart Wazuh Manager to apply changes
+
+Restart Wazuh Manager to apply changes:
+
 sudo systemctl restart wazuh-manager
 
 <img width="645" height="81" alt="image" src="https://github.com/user-attachments/assets/ab4c480a-b662-4106-b2a5-3f0dc3f83af7" />
@@ -80,11 +84,14 @@ Create a test file:
 
 sudo touch var/www/testfile.txt
 
+
 <img width="431" height="57" alt="image" src="https://github.com/user-attachments/assets/5ef7febb-ff07-4e6c-8285-6e5a267daac0" />
+
 
 Add some content:
 
  sudo nano /var/www/testfile.txt
+
  
  <img width="449" height="54" alt="image" src="https://github.com/user-attachments/assets/437b7de5-af03-487a-b9a6-127e90a21f70" />
 
